@@ -1,0 +1,1747 @@
+#######################################
+# Juliane Gansert 			  #
+# Last Modified: April 3rd, 2008	  #	
+# To be run with the software NETWORK #
+#######################################
+
+
+# Assignment of the parameters and equations
+# for the compartments defined in TwoCells.cfg
+# This is for the case that the diamter of the 
+# dendrites is d=5um. 
+th__=5
+
+#define Kd_mpower 4
+Kd_minf=1/(1+exp(-(x+53+th__)/16))
+Kd_mtau=1+6/(1+exp((x+53+th__)/16))
+
+#define Na_mpower 3
+#define Na_hpower 1
+Na_minf=1/(1+exp(-(x+40+th__)/9))
+Na_hinf=1/(1+exp((x+62+th__)/10))
+Na_htau=1+11/(1+exp((x+62+th__)/10))
+
+#################################################
+
+#	A1_ lambda  = 3162.28	um
+#	6 comps of length 100.00 um (total 600.00 um)
+#	Comp taum = 40.00	msec
+#	Comp area = 3141.59	um2
+#	Comp ga   = 785.398	nS
+#	Comp gm   = 0.785	nS
+#	Comp cm   = 31.416	pF
+
+#################################################
+
+A1_0_Cm=31.415926		# pF
+A1_0_Ga=785.398163		# nS
+A1_0_L_Gmax=0.785398		# nS
+A1_0_L_Erev=-54.300000
+A1_0_Na_Gmax=471.238897	#nS
+A1_0_Na_Erev=50	#mV
+A1_0_Na_mpower=Na_mpower
+A1_0_Na_minf=Na_minf(x)
+A1_0_Na_hpower=Na_hpower
+A1_0_Na_hinf=Na_hinf(x)
+A1_0_Na_htau=Na_htau(x)
+A1_0_Kd_Gmax=94.247779	#nS
+A1_0_Kd_Erev=-77.5	#mV
+A1_0_Kd_mpower=Kd_mpower
+A1_0_Kd_minf=Kd_minf(x)
+A1_0_Kd_mtau=Kd_mtau(x)
+
+A1_1_Cm=31.415926		# pF
+A1_1_Ga=785.398163		# nS
+A1_1_L_Gmax=0.785398		# nS
+A1_1_L_Erev=-54.300000
+A1_1_Na_Gmax=471.238897	#nS
+A1_1_Na_Erev=50	#mV
+A1_1_Na_mpower=Na_mpower
+A1_1_Na_minf=Na_minf(x)
+A1_1_Na_hpower=Na_hpower
+A1_1_Na_hinf=Na_hinf(x)
+A1_1_Na_htau=Na_htau(x)
+A1_1_Kd_Gmax=94.247779	#nS
+A1_1_Kd_Erev=-77.5	#mV
+A1_1_Kd_mpower=Kd_mpower
+A1_1_Kd_minf=Kd_minf(x)
+A1_1_Kd_mtau=Kd_mtau(x)
+
+A1_2_Cm=31.415926		# pF
+A1_2_Ga=785.398163		# nS
+A1_2_L_Gmax=0.785398		# nS
+A1_2_L_Erev=-54.300000
+A1_2_Na_Gmax=471.238897	#nS
+A1_2_Na_Erev=50	#mV
+A1_2_Na_mpower=Na_mpower
+A1_2_Na_minf=Na_minf(x)
+A1_2_Na_hpower=Na_hpower
+A1_2_Na_hinf=Na_hinf(x)
+A1_2_Na_htau=Na_htau(x)
+A1_2_Kd_Gmax=94.247779	#nS
+A1_2_Kd_Erev=-77.5	#mV
+A1_2_Kd_mpower=Kd_mpower
+A1_2_Kd_minf=Kd_minf(x)
+A1_2_Kd_mtau=Kd_mtau(x)
+
+A1_3_Cm=31.415926		# pF
+A1_3_Ga=785.398163		# nS
+A1_3_L_Gmax=0.785398		# nS
+A1_3_L_Erev=-54.300000
+A1_3_Na_Gmax=471.238897	#nS
+A1_3_Na_Erev=50	#mV
+A1_3_Na_mpower=Na_mpower
+A1_3_Na_minf=Na_minf(x)
+A1_3_Na_hpower=Na_hpower
+A1_3_Na_hinf=Na_hinf(x)
+A1_3_Na_htau=Na_htau(x)
+A1_3_Kd_Gmax=94.247779	#nS
+A1_3_Kd_Erev=-77.5	#mV
+A1_3_Kd_mpower=Kd_mpower
+A1_3_Kd_minf=Kd_minf(x)
+A1_3_Kd_mtau=Kd_mtau(x)
+
+A1_4_Cm=31.415926		# pF
+A1_4_Ga=785.398163		# nS
+A1_4_L_Gmax=0.785398		# nS
+A1_4_L_Erev=-54.300000
+A1_4_Na_Gmax=471.238897	#nS
+A1_4_Na_Erev=50	#mV
+A1_4_Na_mpower=Na_mpower
+A1_4_Na_minf=Na_minf(x)
+A1_4_Na_hpower=Na_hpower
+A1_4_Na_hinf=Na_hinf(x)
+A1_4_Na_htau=Na_htau(x)
+A1_4_Kd_Gmax=94.247779	#nS
+A1_4_Kd_Erev=-77.5	#mV
+A1_4_Kd_mpower=Kd_mpower
+A1_4_Kd_minf=Kd_minf(x)
+A1_4_Kd_mtau=Kd_mtau(x)
+
+A1_5_Cm=31.415926		# pF
+A1_5_Ga=785.398163		# nS
+A1_5_L_Gmax=0.785398		# nS
+A1_5_L_Erev=-54.300000
+A1_5_Na_Gmax=471.238897	#nS
+A1_5_Na_Erev=50	#mV
+A1_5_Na_mpower=Na_mpower
+A1_5_Na_minf=Na_minf(x)
+A1_5_Na_hpower=Na_hpower
+A1_5_Na_hinf=Na_hinf(x)
+A1_5_Na_htau=Na_htau(x)
+A1_5_Kd_Gmax=94.247779	#nS
+A1_5_Kd_Erev=-77.5	#mV
+A1_5_Kd_mpower=Kd_mpower
+A1_5_Kd_minf=Kd_minf(x)
+A1_5_Kd_mtau=Kd_mtau(x)
+
+#################################################
+
+#	A2_ lambda  = 3162.28	um
+#	6 comps of length 100.00 um (total 600.00 um)
+#	Comp taum = 40.00	msec
+#	Comp area = 3141.59	um2
+#	Comp ga   = 785.398	nS
+#	Comp gm   = 0.785	nS
+#	Comp cm   = 31.416	pF
+
+#################################################
+
+A2_0_Cm=31.415926		# pF
+A2_0_Ga=785.398163		# nS
+A2_0_L_Gmax=0.785398		# nS
+A2_0_L_Erev=-54.300000
+A2_0_Na_Gmax=471.238897	#nS
+A2_0_Na_Erev=50	#mV
+A2_0_Na_mpower=Na_mpower
+A2_0_Na_minf=Na_minf(x)
+A2_0_Na_hpower=Na_hpower
+A2_0_Na_hinf=Na_hinf(x)
+A2_0_Na_htau=Na_htau(x)
+A2_0_Kd_Gmax=94.247779	#nS
+A2_0_Kd_Erev=-77.5	#mV
+A2_0_Kd_mpower=Kd_mpower
+A2_0_Kd_minf=Kd_minf(x)
+A2_0_Kd_mtau=Kd_mtau(x)
+
+A2_1_Cm=31.415926		# pF
+A2_1_Ga=785.398163		# nS
+A2_1_L_Gmax=0.785398		# nS
+A2_1_L_Erev=-54.300000
+A2_1_Na_Gmax=471.238897	#nS
+A2_1_Na_Erev=50	#mV
+A2_1_Na_mpower=Na_mpower
+A2_1_Na_minf=Na_minf(x)
+A2_1_Na_hpower=Na_hpower
+A2_1_Na_hinf=Na_hinf(x)
+A2_1_Na_htau=Na_htau(x)
+A2_1_Kd_Gmax=94.247779	#nS
+A2_1_Kd_Erev=-77.5	#mV
+A2_1_Kd_mpower=Kd_mpower
+A2_1_Kd_minf=Kd_minf(x)
+A2_1_Kd_mtau=Kd_mtau(x)
+
+A2_2_Cm=31.415926		# pF
+A2_2_Ga=785.398163		# nS
+A2_2_L_Gmax=0.785398		# nS
+A2_2_L_Erev=-54.300000
+A2_2_Na_Gmax=471.238897	#nS
+A2_2_Na_Erev=50	#mV
+A2_2_Na_mpower=Na_mpower
+A2_2_Na_minf=Na_minf(x)
+A2_2_Na_hpower=Na_hpower
+A2_2_Na_hinf=Na_hinf(x)
+A2_2_Na_htau=Na_htau(x)
+A2_2_Kd_Gmax=94.247779	#nS
+A2_2_Kd_Erev=-77.5	#mV
+A2_2_Kd_mpower=Kd_mpower
+A2_2_Kd_minf=Kd_minf(x)
+A2_2_Kd_mtau=Kd_mtau(x)
+
+A2_3_Cm=31.415926		# pF
+A2_3_Ga=785.398163		# nS
+A2_3_L_Gmax=0.785398		# nS
+A2_3_L_Erev=-54.300000
+A2_3_Na_Gmax=471.238897	#nS
+A2_3_Na_Erev=50	#mV
+A2_3_Na_mpower=Na_mpower
+A2_3_Na_minf=Na_minf(x)
+A2_3_Na_hpower=Na_hpower
+A2_3_Na_hinf=Na_hinf(x)
+A2_3_Na_htau=Na_htau(x)
+A2_3_Kd_Gmax=94.247779	#nS
+A2_3_Kd_Erev=-77.5	#mV
+A2_3_Kd_mpower=Kd_mpower
+A2_3_Kd_minf=Kd_minf(x)
+A2_3_Kd_mtau=Kd_mtau(x)
+
+A2_4_Cm=31.415926		# pF
+A2_4_Ga=785.398163		# nS
+A2_4_L_Gmax=0.785398		# nS
+A2_4_L_Erev=-54.300000
+A2_4_Na_Gmax=471.238897	#nS
+A2_4_Na_Erev=50	#mV
+A2_4_Na_mpower=Na_mpower
+A2_4_Na_minf=Na_minf(x)
+A2_4_Na_hpower=Na_hpower
+A2_4_Na_hinf=Na_hinf(x)
+A2_4_Na_htau=Na_htau(x)
+A2_4_Kd_Gmax=94.247779	#nS
+A2_4_Kd_Erev=-77.5	#mV
+A2_4_Kd_mpower=Kd_mpower
+A2_4_Kd_minf=Kd_minf(x)
+A2_4_Kd_mtau=Kd_mtau(x)
+
+A2_5_Cm=31.415926		# pF
+A2_5_Ga=785.398163		# nS
+A2_5_L_Gmax=0.785398		# nS
+A2_5_L_Erev=-54.300000
+A2_5_Na_Gmax=471.238897	#nS
+A2_5_Na_Erev=50	#mV
+A2_5_Na_mpower=Na_mpower
+A2_5_Na_minf=Na_minf(x)
+A2_5_Na_hpower=Na_hpower
+A2_5_Na_hinf=Na_hinf(x)
+A2_5_Na_htau=Na_htau(x)
+A2_5_Kd_Gmax=94.247779	#nS
+A2_5_Kd_Erev=-77.5	#mV
+A2_5_Kd_mpower=Kd_mpower
+A2_5_Kd_minf=Kd_minf(x)
+A2_5_Kd_mtau=Kd_mtau(x)
+
+#################################################
+
+#	A3_ lambda  = 3162.28	um
+#	6 comps of length 100.00 um (total 600.00 um)
+#	Comp taum = 40.00	msec
+#	Comp area = 3141.59	um2
+#	Comp ga   = 785.398	nS
+#	Comp gm   = 0.785	nS
+#	Comp cm   = 31.416	pF
+
+#################################################
+
+A3_0_Cm=31.415926		# pF
+A3_0_Ga=785.398163		# nS
+A3_0_L_Gmax=0.785398		# nS
+A3_0_L_Erev=-54.300000
+A3_0_Na_Gmax=471.238897	#nS
+A3_0_Na_Erev=50	#mV
+A3_0_Na_mpower=Na_mpower
+A3_0_Na_minf=Na_minf(x)
+A3_0_Na_hpower=Na_hpower
+A3_0_Na_hinf=Na_hinf(x)
+A3_0_Na_htau=Na_htau(x)
+A3_0_Kd_Gmax=94.247779	#nS
+A3_0_Kd_Erev=-77.5	#mV
+A3_0_Kd_mpower=Kd_mpower
+A3_0_Kd_minf=Kd_minf(x)
+A3_0_Kd_mtau=Kd_mtau(x)
+
+A3_1_Cm=31.415926		# pF
+A3_1_Ga=785.398163		# nS
+A3_1_L_Gmax=0.785398		# nS
+A3_1_L_Erev=-54.300000
+A3_1_Na_Gmax=471.238897	#nS
+A3_1_Na_Erev=50	#mV
+A3_1_Na_mpower=Na_mpower
+A3_1_Na_minf=Na_minf(x)
+A3_1_Na_hpower=Na_hpower
+A3_1_Na_hinf=Na_hinf(x)
+A3_1_Na_htau=Na_htau(x)
+A3_1_Kd_Gmax=94.247779	#nS
+A3_1_Kd_Erev=-77.5	#mV
+A3_1_Kd_mpower=Kd_mpower
+A3_1_Kd_minf=Kd_minf(x)
+A3_1_Kd_mtau=Kd_mtau(x)
+
+A3_2_Cm=31.415926		# pF
+A3_2_Ga=785.398163		# nS
+A3_2_L_Gmax=0.785398		# nS
+A3_2_L_Erev=-54.300000
+A3_2_Na_Gmax=471.238897	#nS
+A3_2_Na_Erev=50	#mV
+A3_2_Na_mpower=Na_mpower
+A3_2_Na_minf=Na_minf(x)
+A3_2_Na_hpower=Na_hpower
+A3_2_Na_hinf=Na_hinf(x)
+A3_2_Na_htau=Na_htau(x)
+A3_2_Kd_Gmax=94.247779	#nS
+A3_2_Kd_Erev=-77.5	#mV
+A3_2_Kd_mpower=Kd_mpower
+A3_2_Kd_minf=Kd_minf(x)
+A3_2_Kd_mtau=Kd_mtau(x)
+
+A3_3_Cm=31.415926		# pF
+A3_3_Ga=785.398163		# nS
+A3_3_L_Gmax=0.785398		# nS
+A3_3_L_Erev=-54.300000
+A3_3_Na_Gmax=471.238897	#nS
+A3_3_Na_Erev=50	#mV
+A3_3_Na_mpower=Na_mpower
+A3_3_Na_minf=Na_minf(x)
+A3_3_Na_hpower=Na_hpower
+A3_3_Na_hinf=Na_hinf(x)
+A3_3_Na_htau=Na_htau(x)
+A3_3_Kd_Gmax=94.247779	#nS
+A3_3_Kd_Erev=-77.5	#mV
+A3_3_Kd_mpower=Kd_mpower
+A3_3_Kd_minf=Kd_minf(x)
+A3_3_Kd_mtau=Kd_mtau(x)
+
+A3_4_Cm=31.415926		# pF
+A3_4_Ga=785.398163		# nS
+A3_4_L_Gmax=0.785398		# nS
+A3_4_L_Erev=-54.300000
+A3_4_Na_Gmax=471.238897	#nS
+A3_4_Na_Erev=50	#mV
+A3_4_Na_mpower=Na_mpower
+A3_4_Na_minf=Na_minf(x)
+A3_4_Na_hpower=Na_hpower
+A3_4_Na_hinf=Na_hinf(x)
+A3_4_Na_htau=Na_htau(x)
+A3_4_Kd_Gmax=94.247779	#nS
+A3_4_Kd_Erev=-77.5	#mV
+A3_4_Kd_mpower=Kd_mpower
+A3_4_Kd_minf=Kd_minf(x)
+A3_4_Kd_mtau=Kd_mtau(x)
+
+A3_5_Cm=31.415926		# pF
+A3_5_Ga=785.398163		# nS
+A3_5_L_Gmax=0.785398		# nS
+A3_5_L_Erev=-54.300000
+A3_5_Na_Gmax=471.238897	#nS
+A3_5_Na_Erev=50	#mV
+A3_5_Na_mpower=Na_mpower
+A3_5_Na_minf=Na_minf(x)
+A3_5_Na_hpower=Na_hpower
+A3_5_Na_hinf=Na_hinf(x)
+A3_5_Na_htau=Na_htau(x)
+A3_5_Kd_Gmax=94.247779	#nS
+A3_5_Kd_Erev=-77.5	#mV
+A3_5_Kd_mpower=Kd_mpower
+A3_5_Kd_minf=Kd_minf(x)
+A3_5_Kd_mtau=Kd_mtau(x)
+
+#################################################
+
+#	A4_ lambda  = 3162.28	um
+#	6 comps of length 100.00 um (total 600.00 um)
+#	Comp taum = 40.00	msec
+#	Comp area = 3141.59	um2
+#	Comp ga   = 785.398	nS
+#	Comp gm   = 0.785	nS
+#	Comp cm   = 31.416	pF
+
+#################################################
+
+A4_0_Cm=31.415926		# pF
+A4_0_Ga=785.398163		# nS
+A4_0_L_Gmax=0.785398		# nS
+A4_0_L_Erev=-54.300000
+A4_0_Na_Gmax=471.238897	#nS
+A4_0_Na_Erev=50	#mV
+A4_0_Na_mpower=Na_mpower
+A4_0_Na_minf=Na_minf(x)
+A4_0_Na_hpower=Na_hpower
+A4_0_Na_hinf=Na_hinf(x)
+A4_0_Na_htau=Na_htau(x)
+A4_0_Kd_Gmax=94.247779	#nS
+A4_0_Kd_Erev=-77.5	#mV
+A4_0_Kd_mpower=Kd_mpower
+A4_0_Kd_minf=Kd_minf(x)
+A4_0_Kd_mtau=Kd_mtau(x)
+
+A4_1_Cm=31.415926		# pF
+A4_1_Ga=785.398163		# nS
+A4_1_L_Gmax=0.785398		# nS
+A4_1_L_Erev=-54.300000
+A4_1_Na_Gmax=471.238897	#nS
+A4_1_Na_Erev=50	#mV
+A4_1_Na_mpower=Na_mpower
+A4_1_Na_minf=Na_minf(x)
+A4_1_Na_hpower=Na_hpower
+A4_1_Na_hinf=Na_hinf(x)
+A4_1_Na_htau=Na_htau(x)
+A4_1_Kd_Gmax=94.247779	#nS
+A4_1_Kd_Erev=-77.5	#mV
+A4_1_Kd_mpower=Kd_mpower
+A4_1_Kd_minf=Kd_minf(x)
+A4_1_Kd_mtau=Kd_mtau(x)
+
+A4_2_Cm=31.415926		# pF
+A4_2_Ga=785.398163		# nS
+A4_2_L_Gmax=0.785398		# nS
+A4_2_L_Erev=-54.300000
+A4_2_Na_Gmax=471.238897	#nS
+A4_2_Na_Erev=50	#mV
+A4_2_Na_mpower=Na_mpower
+A4_2_Na_minf=Na_minf(x)
+A4_2_Na_hpower=Na_hpower
+A4_2_Na_hinf=Na_hinf(x)
+A4_2_Na_htau=Na_htau(x)
+A4_2_Kd_Gmax=94.247779	#nS
+A4_2_Kd_Erev=-77.5	#mV
+A4_2_Kd_mpower=Kd_mpower
+A4_2_Kd_minf=Kd_minf(x)
+A4_2_Kd_mtau=Kd_mtau(x)
+
+A4_3_Cm=31.415926		# pF
+A4_3_Ga=785.398163		# nS
+A4_3_L_Gmax=0.785398		# nS
+A4_3_L_Erev=-54.300000
+A4_3_Na_Gmax=471.238897	#nS
+A4_3_Na_Erev=50	#mV
+A4_3_Na_mpower=Na_mpower
+A4_3_Na_minf=Na_minf(x)
+A4_3_Na_hpower=Na_hpower
+A4_3_Na_hinf=Na_hinf(x)
+A4_3_Na_htau=Na_htau(x)
+A4_3_Kd_Gmax=94.247779	#nS
+A4_3_Kd_Erev=-77.5	#mV
+A4_3_Kd_mpower=Kd_mpower
+A4_3_Kd_minf=Kd_minf(x)
+A4_3_Kd_mtau=Kd_mtau(x)
+
+A4_4_Cm=31.415926		# pF
+A4_4_Ga=785.398163		# nS
+A4_4_L_Gmax=0.785398		# nS
+A4_4_L_Erev=-54.300000
+A4_4_Na_Gmax=471.238897	#nS
+A4_4_Na_Erev=50	#mV
+A4_4_Na_mpower=Na_mpower
+A4_4_Na_minf=Na_minf(x)
+A4_4_Na_hpower=Na_hpower
+A4_4_Na_hinf=Na_hinf(x)
+A4_4_Na_htau=Na_htau(x)
+A4_4_Kd_Gmax=94.247779	#nS
+A4_4_Kd_Erev=-77.5	#mV
+A4_4_Kd_mpower=Kd_mpower
+A4_4_Kd_minf=Kd_minf(x)
+A4_4_Kd_mtau=Kd_mtau(x)
+
+A4_5_Cm=31.415926		# pF
+A4_5_Ga=785.398163		# nS
+A4_5_L_Gmax=0.785398		# nS
+A4_5_L_Erev=-54.300000
+A4_5_Na_Gmax=471.238897	#nS
+A4_5_Na_Erev=50	#mV
+A4_5_Na_mpower=Na_mpower
+A4_5_Na_minf=Na_minf(x)
+A4_5_Na_hpower=Na_hpower
+A4_5_Na_hinf=Na_hinf(x)
+A4_5_Na_htau=Na_htau(x)
+A4_5_Kd_Gmax=94.247779	#nS
+A4_5_Kd_Erev=-77.5	#mV
+A4_5_Kd_mpower=Kd_mpower
+A4_5_Kd_minf=Kd_minf(x)
+A4_5_Kd_mtau=Kd_mtau(x)
+
+#################################################
+
+#	A5_ lambda  = 3162.28	um
+#	6 comps of length 100.00 um (total 600.00 um)
+#	Comp taum = 40.00	msec
+#	Comp area = 3141.59	um2
+#	Comp ga   = 785.398	nS
+#	Comp gm   = 0.785	nS
+#	Comp cm   = 31.416	pF
+
+#################################################
+
+A5_0_Cm=31.415926		# pF
+A5_0_Ga=785.398163		# nS
+A5_0_L_Gmax=0.785398		# nS
+A5_0_L_Erev=-54.300000
+A5_0_Na_Gmax=471.238897	#nS
+A5_0_Na_Erev=50	#mV
+A5_0_Na_mpower=Na_mpower
+A5_0_Na_minf=Na_minf(x)
+A5_0_Na_hpower=Na_hpower
+A5_0_Na_hinf=Na_hinf(x)
+A5_0_Na_htau=Na_htau(x)
+A5_0_Kd_Gmax=94.247779	#nS
+A5_0_Kd_Erev=-77.5	#mV
+A5_0_Kd_mpower=Kd_mpower
+A5_0_Kd_minf=Kd_minf(x)
+A5_0_Kd_mtau=Kd_mtau(x)
+
+A5_1_Cm=31.415926		# pF
+A5_1_Ga=785.398163		# nS
+A5_1_L_Gmax=0.785398		# nS
+A5_1_L_Erev=-54.300000
+A5_1_Na_Gmax=471.238897	#nS
+A5_1_Na_Erev=50	#mV
+A5_1_Na_mpower=Na_mpower
+A5_1_Na_minf=Na_minf(x)
+A5_1_Na_hpower=Na_hpower
+A5_1_Na_hinf=Na_hinf(x)
+A5_1_Na_htau=Na_htau(x)
+A5_1_Kd_Gmax=94.247779	#nS
+A5_1_Kd_Erev=-77.5	#mV
+A5_1_Kd_mpower=Kd_mpower
+A5_1_Kd_minf=Kd_minf(x)
+A5_1_Kd_mtau=Kd_mtau(x)
+
+A5_2_Cm=31.415926		# pF
+A5_2_Ga=785.398163		# nS
+A5_2_L_Gmax=0.785398		# nS
+A5_2_L_Erev=-54.300000
+A5_2_Na_Gmax=471.238897	#nS
+A5_2_Na_Erev=50	#mV
+A5_2_Na_mpower=Na_mpower
+A5_2_Na_minf=Na_minf(x)
+A5_2_Na_hpower=Na_hpower
+A5_2_Na_hinf=Na_hinf(x)
+A5_2_Na_htau=Na_htau(x)
+A5_2_Kd_Gmax=94.247779	#nS
+A5_2_Kd_Erev=-77.5	#mV
+A5_2_Kd_mpower=Kd_mpower
+A5_2_Kd_minf=Kd_minf(x)
+A5_2_Kd_mtau=Kd_mtau(x)
+
+A5_3_Cm=31.415926		# pF
+A5_3_Ga=785.398163		# nS
+A5_3_L_Gmax=0.785398		# nS
+A5_3_L_Erev=-54.300000
+A5_3_Na_Gmax=471.238897	#nS
+A5_3_Na_Erev=50	#mV
+A5_3_Na_mpower=Na_mpower
+A5_3_Na_minf=Na_minf(x)
+A5_3_Na_hpower=Na_hpower
+A5_3_Na_hinf=Na_hinf(x)
+A5_3_Na_htau=Na_htau(x)
+A5_3_Kd_Gmax=94.247779	#nS
+A5_3_Kd_Erev=-77.5	#mV
+A5_3_Kd_mpower=Kd_mpower
+A5_3_Kd_minf=Kd_minf(x)
+A5_3_Kd_mtau=Kd_mtau(x)
+
+A5_4_Cm=31.415926		# pF
+A5_4_Ga=785.398163		# nS
+A5_4_L_Gmax=0.785398		# nS
+A5_4_L_Erev=-54.300000
+A5_4_Na_Gmax=471.238897	#nS
+A5_4_Na_Erev=50	#mV
+A5_4_Na_mpower=Na_mpower
+A5_4_Na_minf=Na_minf(x)
+A5_4_Na_hpower=Na_hpower
+A5_4_Na_hinf=Na_hinf(x)
+A5_4_Na_htau=Na_htau(x)
+A5_4_Kd_Gmax=94.247779	#nS
+A5_4_Kd_Erev=-77.5	#mV
+A5_4_Kd_mpower=Kd_mpower
+A5_4_Kd_minf=Kd_minf(x)
+A5_4_Kd_mtau=Kd_mtau(x)
+
+A5_5_Cm=31.415926		# pF
+A5_5_Ga=785.398163		# nS
+A5_5_L_Gmax=0.785398		# nS
+A5_5_L_Erev=-54.300000
+A5_5_Na_Gmax=471.238897	#nS
+A5_5_Na_Erev=50	#mV
+A5_5_Na_mpower=Na_mpower
+A5_5_Na_minf=Na_minf(x)
+A5_5_Na_hpower=Na_hpower
+A5_5_Na_hinf=Na_hinf(x)
+A5_5_Na_htau=Na_htau(x)
+A5_5_Kd_Gmax=94.247779	#nS
+A5_5_Kd_Erev=-77.5	#mV
+A5_5_Kd_mpower=Kd_mpower
+A5_5_Kd_minf=Kd_minf(x)
+A5_5_Kd_mtau=Kd_mtau(x)
+
+#################################################
+
+#	A6_ lambda  = 3162.28	um
+#	6 comps of length 100.00 um (total 600.00 um)
+#	Comp taum = 40.00	msec
+#	Comp area = 3141.59	um2
+#	Comp ga   = 785.398	nS
+#	Comp gm   = 0.785	nS
+#	Comp cm   = 31.416	pF
+
+#################################################
+
+A6_0_Cm=31.415926		# pF
+A6_0_Ga=785.398163		# nS
+A6_0_L_Gmax=0.785398		# nS
+A6_0_L_Erev=-54.300000
+A6_0_Na_Gmax=471.238897	#nS
+A6_0_Na_Erev=50	#mV
+A6_0_Na_mpower=Na_mpower
+A6_0_Na_minf=Na_minf(x)
+A6_0_Na_hpower=Na_hpower
+A6_0_Na_hinf=Na_hinf(x)
+A6_0_Na_htau=Na_htau(x)
+A6_0_Kd_Gmax=94.247779	#nS
+A6_0_Kd_Erev=-77.5	#mV
+A6_0_Kd_mpower=Kd_mpower
+A6_0_Kd_minf=Kd_minf(x)
+A6_0_Kd_mtau=Kd_mtau(x)
+
+A6_1_Cm=31.415926		# pF
+A6_1_Ga=785.398163		# nS
+A6_1_L_Gmax=0.785398		# nS
+A6_1_L_Erev=-54.300000
+A6_1_Na_Gmax=471.238897	#nS
+A6_1_Na_Erev=50	#mV
+A6_1_Na_mpower=Na_mpower
+A6_1_Na_minf=Na_minf(x)
+A6_1_Na_hpower=Na_hpower
+A6_1_Na_hinf=Na_hinf(x)
+A6_1_Na_htau=Na_htau(x)
+A6_1_Kd_Gmax=94.247779	#nS
+A6_1_Kd_Erev=-77.5	#mV
+A6_1_Kd_mpower=Kd_mpower
+A6_1_Kd_minf=Kd_minf(x)
+A6_1_Kd_mtau=Kd_mtau(x)
+
+A6_2_Cm=31.415926		# pF
+A6_2_Ga=785.398163		# nS
+A6_2_L_Gmax=0.785398		# nS
+A6_2_L_Erev=-54.300000
+A6_2_Na_Gmax=471.238897	#nS
+A6_2_Na_Erev=50	#mV
+A6_2_Na_mpower=Na_mpower
+A6_2_Na_minf=Na_minf(x)
+A6_2_Na_hpower=Na_hpower
+A6_2_Na_hinf=Na_hinf(x)
+A6_2_Na_htau=Na_htau(x)
+A6_2_Kd_Gmax=94.247779	#nS
+A6_2_Kd_Erev=-77.5	#mV
+A6_2_Kd_mpower=Kd_mpower
+A6_2_Kd_minf=Kd_minf(x)
+A6_2_Kd_mtau=Kd_mtau(x)
+
+A6_3_Cm=31.415926		# pF
+A6_3_Ga=785.398163		# nS
+A6_3_L_Gmax=0.785398		# nS
+A6_3_L_Erev=-54.300000
+A6_3_Na_Gmax=471.238897	#nS
+A6_3_Na_Erev=50	#mV
+A6_3_Na_mpower=Na_mpower
+A6_3_Na_minf=Na_minf(x)
+A6_3_Na_hpower=Na_hpower
+A6_3_Na_hinf=Na_hinf(x)
+A6_3_Na_htau=Na_htau(x)
+A6_3_Kd_Gmax=94.247779	#nS
+A6_3_Kd_Erev=-77.5	#mV
+A6_3_Kd_mpower=Kd_mpower
+A6_3_Kd_minf=Kd_minf(x)
+A6_3_Kd_mtau=Kd_mtau(x)
+
+A6_4_Cm=31.415926		# pF
+A6_4_Ga=785.398163		# nS
+A6_4_L_Gmax=0.785398		# nS
+A6_4_L_Erev=-54.300000
+A6_4_Na_Gmax=471.238897	#nS
+A6_4_Na_Erev=50	#mV
+A6_4_Na_mpower=Na_mpower
+A6_4_Na_minf=Na_minf(x)
+A6_4_Na_hpower=Na_hpower
+A6_4_Na_hinf=Na_hinf(x)
+A6_4_Na_htau=Na_htau(x)
+A6_4_Kd_Gmax=94.247779	#nS
+A6_4_Kd_Erev=-77.5	#mV
+A6_4_Kd_mpower=Kd_mpower
+A6_4_Kd_minf=Kd_minf(x)
+A6_4_Kd_mtau=Kd_mtau(x)
+
+A6_5_Cm=31.415926		# pF
+A6_5_Ga=785.398163		# nS
+A6_5_L_Gmax=0.785398		# nS
+A6_5_L_Erev=-54.300000
+A6_5_Na_Gmax=471.238897	#nS
+A6_5_Na_Erev=50	#mV
+A6_5_Na_mpower=Na_mpower
+A6_5_Na_minf=Na_minf(x)
+A6_5_Na_hpower=Na_hpower
+A6_5_Na_hinf=Na_hinf(x)
+A6_5_Na_htau=Na_htau(x)
+A6_5_Kd_Gmax=94.247779	#nS
+A6_5_Kd_Erev=-77.5	#mV
+A6_5_Kd_mpower=Kd_mpower
+A6_5_Kd_minf=Kd_minf(x)
+A6_5_Kd_mtau=Kd_mtau(x)
+
+#################################################
+
+#	A7_ lambda  = 3162.28	um
+#	6 comps of length 100.00 um (total 600.00 um)
+#	Comp taum = 40.00	msec
+#	Comp area = 3141.59	um2
+#	Comp ga   = 785.398	nS
+#	Comp gm   = 0.785	nS
+#	Comp cm   = 31.416	pF
+
+#################################################
+
+A7_0_Cm=31.415926		# pF
+A7_0_Ga=785.398163		# nS
+A7_0_L_Gmax=0.785398		# nS
+A7_0_L_Erev=-54.300000
+A7_0_Na_Gmax=471.238897	#nS
+A7_0_Na_Erev=50	#mV
+A7_0_Na_mpower=Na_mpower
+A7_0_Na_minf=Na_minf(x)
+A7_0_Na_hpower=Na_hpower
+A7_0_Na_hinf=Na_hinf(x)
+A7_0_Na_htau=Na_htau(x)
+A7_0_Kd_Gmax=94.247779	#nS
+A7_0_Kd_Erev=-77.5	#mV
+A7_0_Kd_mpower=Kd_mpower
+A7_0_Kd_minf=Kd_minf(x)
+A7_0_Kd_mtau=Kd_mtau(x)
+
+A7_1_Cm=31.415926		# pF
+A7_1_Ga=785.398163		# nS
+A7_1_L_Gmax=0.785398		# nS
+A7_1_L_Erev=-54.300000
+A7_1_Na_Gmax=471.238897	#nS
+A7_1_Na_Erev=50	#mV
+A7_1_Na_mpower=Na_mpower
+A7_1_Na_minf=Na_minf(x)
+A7_1_Na_hpower=Na_hpower
+A7_1_Na_hinf=Na_hinf(x)
+A7_1_Na_htau=Na_htau(x)
+A7_1_Kd_Gmax=94.247779	#nS
+A7_1_Kd_Erev=-77.5	#mV
+A7_1_Kd_mpower=Kd_mpower
+A7_1_Kd_minf=Kd_minf(x)
+A7_1_Kd_mtau=Kd_mtau(x)
+
+A7_2_Cm=31.415926		# pF
+A7_2_Ga=785.398163		# nS
+A7_2_L_Gmax=0.785398		# nS
+A7_2_L_Erev=-54.300000
+A7_2_Na_Gmax=471.238897	#nS
+A7_2_Na_Erev=50	#mV
+A7_2_Na_mpower=Na_mpower
+A7_2_Na_minf=Na_minf(x)
+A7_2_Na_hpower=Na_hpower
+A7_2_Na_hinf=Na_hinf(x)
+A7_2_Na_htau=Na_htau(x)
+A7_2_Kd_Gmax=94.247779	#nS
+A7_2_Kd_Erev=-77.5	#mV
+A7_2_Kd_mpower=Kd_mpower
+A7_2_Kd_minf=Kd_minf(x)
+A7_2_Kd_mtau=Kd_mtau(x)
+
+A7_3_Cm=31.415926		# pF
+A7_3_Ga=785.398163		# nS
+A7_3_L_Gmax=0.785398		# nS
+A7_3_L_Erev=-54.300000
+A7_3_Na_Gmax=471.238897	#nS
+A7_3_Na_Erev=50	#mV
+A7_3_Na_mpower=Na_mpower
+A7_3_Na_minf=Na_minf(x)
+A7_3_Na_hpower=Na_hpower
+A7_3_Na_hinf=Na_hinf(x)
+A7_3_Na_htau=Na_htau(x)
+A7_3_Kd_Gmax=94.247779	#nS
+A7_3_Kd_Erev=-77.5	#mV
+A7_3_Kd_mpower=Kd_mpower
+A7_3_Kd_minf=Kd_minf(x)
+A7_3_Kd_mtau=Kd_mtau(x)
+
+A7_4_Cm=31.415926		# pF
+A7_4_Ga=785.398163		# nS
+A7_4_L_Gmax=0.785398		# nS
+A7_4_L_Erev=-54.300000
+A7_4_Na_Gmax=471.238897	#nS
+A7_4_Na_Erev=50	#mV
+A7_4_Na_mpower=Na_mpower
+A7_4_Na_minf=Na_minf(x)
+A7_4_Na_hpower=Na_hpower
+A7_4_Na_hinf=Na_hinf(x)
+A7_4_Na_htau=Na_htau(x)
+A7_4_Kd_Gmax=94.247779	#nS
+A7_4_Kd_Erev=-77.5	#mV
+A7_4_Kd_mpower=Kd_mpower
+A7_4_Kd_minf=Kd_minf(x)
+A7_4_Kd_mtau=Kd_mtau(x)
+
+A7_5_Cm=31.415926		# pF
+A7_5_Ga=785.398163		# nS
+A7_5_L_Gmax=0.785398		# nS
+A7_5_L_Erev=-54.300000
+A7_5_Na_Gmax=471.238897	#nS
+A7_5_Na_Erev=50	#mV
+A7_5_Na_mpower=Na_mpower
+A7_5_Na_minf=Na_minf(x)
+A7_5_Na_hpower=Na_hpower
+A7_5_Na_hinf=Na_hinf(x)
+A7_5_Na_htau=Na_htau(x)
+A7_5_Kd_Gmax=94.247779	#nS
+A7_5_Kd_Erev=-77.5	#mV
+A7_5_Kd_mpower=Kd_mpower
+A7_5_Kd_minf=Kd_minf(x)
+A7_5_Kd_mtau=Kd_mtau(x)
+
+#################################################
+
+#	A8_ lambda  = 3162.28	um
+#	6 comps of length 100.00 um (total 600.00 um)
+#	Comp taum = 40.00	msec
+#	Comp area = 3141.59	um2
+#	Comp ga   = 785.398	nS
+#	Comp gm   = 0.785	nS
+#	Comp cm   = 31.416	pF
+
+#################################################
+
+A8_0_Cm=31.415926		# pF
+A8_0_Ga=785.398163		# nS
+A8_0_L_Gmax=0.785398		# nS
+A8_0_L_Erev=-54.300000
+A8_0_Na_Gmax=471.238897	#nS
+A8_0_Na_Erev=50	#mV
+A8_0_Na_mpower=Na_mpower
+A8_0_Na_minf=Na_minf(x)
+A8_0_Na_hpower=Na_hpower
+A8_0_Na_hinf=Na_hinf(x)
+A8_0_Na_htau=Na_htau(x)
+A8_0_Kd_Gmax=94.247779	#nS
+A8_0_Kd_Erev=-77.5	#mV
+A8_0_Kd_mpower=Kd_mpower
+A8_0_Kd_minf=Kd_minf(x)
+A8_0_Kd_mtau=Kd_mtau(x)
+
+A8_1_Cm=31.415926		# pF
+A8_1_Ga=785.398163		# nS
+A8_1_L_Gmax=0.785398		# nS
+A8_1_L_Erev=-54.300000
+A8_1_Na_Gmax=471.238897	#nS
+A8_1_Na_Erev=50	#mV
+A8_1_Na_mpower=Na_mpower
+A8_1_Na_minf=Na_minf(x)
+A8_1_Na_hpower=Na_hpower
+A8_1_Na_hinf=Na_hinf(x)
+A8_1_Na_htau=Na_htau(x)
+A8_1_Kd_Gmax=94.247779	#nS
+A8_1_Kd_Erev=-77.5	#mV
+A8_1_Kd_mpower=Kd_mpower
+A8_1_Kd_minf=Kd_minf(x)
+A8_1_Kd_mtau=Kd_mtau(x)
+
+A8_2_Cm=31.415926		# pF
+A8_2_Ga=785.398163		# nS
+A8_2_L_Gmax=0.785398		# nS
+A8_2_L_Erev=-54.300000
+A8_2_Na_Gmax=471.238897	#nS
+A8_2_Na_Erev=50	#mV
+A8_2_Na_mpower=Na_mpower
+A8_2_Na_minf=Na_minf(x)
+A8_2_Na_hpower=Na_hpower
+A8_2_Na_hinf=Na_hinf(x)
+A8_2_Na_htau=Na_htau(x)
+A8_2_Kd_Gmax=94.247779	#nS
+A8_2_Kd_Erev=-77.5	#mV
+A8_2_Kd_mpower=Kd_mpower
+A8_2_Kd_minf=Kd_minf(x)
+A8_2_Kd_mtau=Kd_mtau(x)
+
+A8_3_Cm=31.415926		# pF
+A8_3_Ga=785.398163		# nS
+A8_3_L_Gmax=0.785398		# nS
+A8_3_L_Erev=-54.300000
+A8_3_Na_Gmax=471.238897	#nS
+A8_3_Na_Erev=50	#mV
+A8_3_Na_mpower=Na_mpower
+A8_3_Na_minf=Na_minf(x)
+A8_3_Na_hpower=Na_hpower
+A8_3_Na_hinf=Na_hinf(x)
+A8_3_Na_htau=Na_htau(x)
+A8_3_Kd_Gmax=94.247779	#nS
+A8_3_Kd_Erev=-77.5	#mV
+A8_3_Kd_mpower=Kd_mpower
+A8_3_Kd_minf=Kd_minf(x)
+A8_3_Kd_mtau=Kd_mtau(x)
+
+A8_4_Cm=31.415926		# pF
+A8_4_Ga=785.398163		# nS
+A8_4_L_Gmax=0.785398		# nS
+A8_4_L_Erev=-54.300000
+A8_4_Na_Gmax=471.238897	#nS
+A8_4_Na_Erev=50	#mV
+A8_4_Na_mpower=Na_mpower
+A8_4_Na_minf=Na_minf(x)
+A8_4_Na_hpower=Na_hpower
+A8_4_Na_hinf=Na_hinf(x)
+A8_4_Na_htau=Na_htau(x)
+A8_4_Kd_Gmax=94.247779	#nS
+A8_4_Kd_Erev=-77.5	#mV
+A8_4_Kd_mpower=Kd_mpower
+A8_4_Kd_minf=Kd_minf(x)
+A8_4_Kd_mtau=Kd_mtau(x)
+
+A8_5_Cm=31.415926		# pF
+A8_5_Ga=785.398163		# nS
+A8_5_L_Gmax=0.785398		# nS
+A8_5_L_Erev=-54.300000
+A8_5_Na_Gmax=471.238897	#nS
+A8_5_Na_Erev=50	#mV
+A8_5_Na_mpower=Na_mpower
+A8_5_Na_minf=Na_minf(x)
+A8_5_Na_hpower=Na_hpower
+A8_5_Na_hinf=Na_hinf(x)
+A8_5_Na_htau=Na_htau(x)
+A8_5_Kd_Gmax=94.247779	#nS
+A8_5_Kd_Erev=-77.5	#mV
+A8_5_Kd_mpower=Kd_mpower
+A8_5_Kd_minf=Kd_minf(x)
+A8_5_Kd_mtau=Kd_mtau(x)
+
+#################################################
+#	Comp taum = 40.00	msec
+#	Comp area = 1256.64	um2
+#	Comp ga   = 20000.000	nS
+#	Comp gm   = 0.314	nS
+#	Comp cm   = 12.566	pF
+
+#################################################
+
+S1_Cm=12.566371		# pF
+S1_Ga=20000.000000		# nS
+S1_L_Gmax=0.314159		# nS
+S1_L_Erev=-65.000000
+
+#################################################
+#	Comp taum = 40.00	msec
+#	Comp area = 1256.64	um2
+#	Comp ga   = 20000.000	nS
+#	Comp gm   = 0.314	nS
+#	Comp cm   = 12.566	pF
+
+#################################################
+
+S2_Cm=12.566371		# pF
+S2_Ga=20000.000000		# nS
+S2_L_Gmax=0.314159		# nS
+S2_L_Erev=-65.000000
+
+#################################################
+#	Comp taum = 40.00	msec
+#	Comp area = 1256.64	um2
+#	Comp ga   = 20000.000	nS
+#	Comp gm   = 0.314	nS
+#	Comp cm   = 12.566	pF
+
+#################################################
+
+S3_Cm=12.566371		# pF
+S3_Ga=20000.000000		# nS
+S3_L_Gmax=0.314159		# nS
+S3_L_Erev=-65.000000
+
+#################################################
+#	Comp taum = 40.00	msec
+#	Comp area = 1256.64	um2
+#	Comp ga   = 20000.000	nS
+#	Comp gm   = 0.314	nS
+#	Comp cm   = 12.566	pF
+
+#################################################
+
+S4_Cm=12.566371		# pF
+S4_Ga=20000.000000		# nS
+S4_L_Gmax=0.314159		# nS
+S4_L_Erev=-65.000000
+
+#################################################
+#	Comp taum = 40.00	msec
+#	Comp area = 1256.64	um2
+#	Comp ga   = 20000.000	nS
+#	Comp gm   = 0.314	nS
+#	Comp cm   = 12.566	pF
+
+#################################################
+
+S5_Cm=12.566371		# pF
+S5_Ga=20000.000000		# nS
+S5_L_Gmax=0.314159		# nS
+S5_L_Erev=-65.000000
+
+#################################################
+#	Comp taum = 40.00	msec
+#	Comp area = 1256.64	um2
+#	Comp ga   = 20000.000	nS
+#	Comp gm   = 0.314	nS
+#	Comp cm   = 12.566	pF
+
+#################################################
+
+S6_Cm=12.566371		# pF
+S6_Ga=20000.000000		# nS
+S6_L_Gmax=0.314159		# nS
+S6_L_Erev=-65.000000
+
+#################################################
+#	Comp taum = 40.00	msec
+#	Comp area = 1256.64	um2
+#	Comp ga   = 20000.000	nS
+#	Comp gm   = 0.314	nS
+#	Comp cm   = 12.566	pF
+
+#################################################
+
+S7_Cm=12.566371		# pF
+S7_Ga=20000.000000		# nS
+S7_L_Gmax=0.314159		# nS
+S7_L_Erev=-65.000000
+
+#################################################
+#	Comp taum = 40.00	msec
+#	Comp area = 1256.64	um2
+#	Comp ga   = 20000.000	nS
+#	Comp gm   = 0.314	nS
+#	Comp cm   = 12.566	pF
+
+#################################################
+
+S8_Cm=12.566371		# pF
+S8_Ga=20000.000000		# nS
+S8_L_Gmax=0.314159		# nS
+S8_L_Erev=-65.000000
+
+#################################################
+
+#	D1C1_ lambda  = 2236.07	um
+#	6 comps of length 100.00 um (total 600.00 um)
+#	Comp taum = 40.00	msec
+#	Comp area = 1570.80	um2
+#	Comp ga   = 196.350	nS
+#	Comp gm   = 0.393	nS
+#	Comp cm   = 15.708	pF
+
+#################################################
+
+D1C1_0_Cm=15.707963		# pF
+D1C1_0_Ga=196.349541		# nS
+D1C1_0_L_Gmax=0.392699		# nS
+D1C1_0_L_Erev=-65.000000
+
+D1C1_1_Cm=15.707963		# pF
+D1C1_1_Ga=196.349541		# nS
+D1C1_1_L_Gmax=0.392699		# nS
+D1C1_1_L_Erev=-65.000000
+
+D1C1_2_Cm=15.707963		# pF
+D1C1_2_Ga=196.349541		# nS
+D1C1_2_L_Gmax=0.392699		# nS
+D1C1_2_L_Erev=-65.000000
+
+D1C1_3_Cm=15.707963		# pF
+D1C1_3_Ga=196.349541		# nS
+D1C1_3_L_Gmax=0.392699		# nS
+D1C1_3_L_Erev=-65.000000
+
+D1C1_4_Cm=15.707963		# pF
+D1C1_4_Ga=196.349541		# nS
+D1C1_4_L_Gmax=0.392699		# nS
+D1C1_4_L_Erev=-65.000000
+
+D1C1_5_Cm=15.707963		# pF
+D1C1_5_Ga=196.349541		# nS
+D1C1_5_L_Gmax=0.392699		# nS
+D1C1_5_L_Erev=-65.000000
+
+#################################################
+
+#	D2C1_ lambda  = 2236.07	um
+#	6 comps of length 100.00 um (total 600.00 um)
+#	Comp taum = 40.00	msec
+#	Comp area = 1570.80	um2
+#	Comp ga   = 196.350	nS
+#	Comp gm   = 0.393	nS
+#	Comp cm   = 15.708	pF
+
+#################################################
+
+D2C1_0_Cm=15.707963		# pF
+D2C1_0_Ga=196.349541		# nS
+D2C1_0_L_Gmax=0.392699		# nS
+D2C1_0_L_Erev=-65.000000
+
+D2C1_1_Cm=15.707963		# pF
+D2C1_1_Ga=196.349541		# nS
+D2C1_1_L_Gmax=0.392699		# nS
+D2C1_1_L_Erev=-65.000000
+
+D2C1_2_Cm=15.707963		# pF
+D2C1_2_Ga=196.349541		# nS
+D2C1_2_L_Gmax=0.392699		# nS
+D2C1_2_L_Erev=-65.000000
+
+D2C1_3_Cm=15.707963		# pF
+D2C1_3_Ga=196.349541		# nS
+D2C1_3_L_Gmax=0.392699		# nS
+D2C1_3_L_Erev=-65.000000
+
+D2C1_4_Cm=15.707963		# pF
+D2C1_4_Ga=196.349541		# nS
+D2C1_4_L_Gmax=0.392699		# nS
+D2C1_4_L_Erev=-65.000000
+
+D2C1_5_Cm=15.707963		# pF
+D2C1_5_Ga=196.349541		# nS
+D2C1_5_L_Gmax=0.392699		# nS
+D2C1_5_L_Erev=-65.000000
+
+#################################################
+
+#	D1C2_ lambda  = 2236.07	um
+#	6 comps of length 100.00 um (total 600.00 um)
+#	Comp taum = 40.00	msec
+#	Comp area = 1570.80	um2
+#	Comp ga   = 196.350	nS
+#	Comp gm   = 0.393	nS
+#	Comp cm   = 15.708	pF
+
+#################################################
+
+D1C2_0_Cm=15.707963		# pF
+D1C2_0_Ga=196.349541		# nS
+D1C2_0_L_Gmax=0.392699		# nS
+D1C2_0_L_Erev=-65.000000
+
+D1C2_1_Cm=15.707963		# pF
+D1C2_1_Ga=196.349541		# nS
+D1C2_1_L_Gmax=0.392699		# nS
+D1C2_1_L_Erev=-65.000000
+
+D1C2_2_Cm=15.707963		# pF
+D1C2_2_Ga=196.349541		# nS
+D1C2_2_L_Gmax=0.392699		# nS
+D1C2_2_L_Erev=-65.000000
+
+D1C2_3_Cm=15.707963		# pF
+D1C2_3_Ga=196.349541		# nS
+D1C2_3_L_Gmax=0.392699		# nS
+D1C2_3_L_Erev=-65.000000
+
+D1C2_4_Cm=15.707963		# pF
+D1C2_4_Ga=196.349541		# nS
+D1C2_4_L_Gmax=0.392699		# nS
+D1C2_4_L_Erev=-65.000000
+
+D1C2_5_Cm=15.707963		# pF
+D1C2_5_Ga=196.349541		# nS
+D1C2_5_L_Gmax=0.392699		# nS
+D1C2_5_L_Erev=-65.000000
+
+#################################################
+
+#	D2C2_ lambda  = 2236.07	um
+#	6 comps of length 100.00 um (total 600.00 um)
+#	Comp taum = 40.00	msec
+#	Comp area = 1570.80	um2
+#	Comp ga   = 196.350	nS
+#	Comp gm   = 0.393	nS
+#	Comp cm   = 15.708	pF
+
+#################################################
+
+D2C2_0_Cm=15.707963		# pF
+D2C2_0_Ga=196.349541		# nS
+D2C2_0_L_Gmax=0.392699		# nS
+D2C2_0_L_Erev=-65.000000
+
+D2C2_1_Cm=15.707963		# pF
+D2C2_1_Ga=196.349541		# nS
+D2C2_1_L_Gmax=0.392699		# nS
+D2C2_1_L_Erev=-65.000000
+
+D2C2_2_Cm=15.707963		# pF
+D2C2_2_Ga=196.349541		# nS
+D2C2_2_L_Gmax=0.392699		# nS
+D2C2_2_L_Erev=-65.000000
+
+D2C2_3_Cm=15.707963		# pF
+D2C2_3_Ga=196.349541		# nS
+D2C2_3_L_Gmax=0.392699		# nS
+D2C2_3_L_Erev=-65.000000
+
+D2C2_4_Cm=15.707963		# pF
+D2C2_4_Ga=196.349541		# nS
+D2C2_4_L_Gmax=0.392699		# nS
+D2C2_4_L_Erev=-65.000000
+
+D2C2_5_Cm=15.707963		# pF
+D2C2_5_Ga=196.349541		# nS
+D2C2_5_L_Gmax=0.392699		# nS
+D2C2_5_L_Erev=-65.000000
+
+#################################################
+
+#	D1C3_ lambda  = 2236.07	um
+#	6 comps of length 100.00 um (total 600.00 um)
+#	Comp taum = 40.00	msec
+#	Comp area = 1570.80	um2
+#	Comp ga   = 196.350	nS
+#	Comp gm   = 0.393	nS
+#	Comp cm   = 15.708	pF
+
+#################################################
+
+D1C3_0_Cm=15.707963		# pF
+D1C3_0_Ga=196.349541		# nS
+D1C3_0_L_Gmax=0.392699		# nS
+D1C3_0_L_Erev=-65.000000
+
+D1C3_1_Cm=15.707963		# pF
+D1C3_1_Ga=196.349541		# nS
+D1C3_1_L_Gmax=0.392699		# nS
+D1C3_1_L_Erev=-65.000000
+
+D1C3_2_Cm=15.707963		# pF
+D1C3_2_Ga=196.349541		# nS
+D1C3_2_L_Gmax=0.392699		# nS
+D1C3_2_L_Erev=-65.000000
+
+D1C3_3_Cm=15.707963		# pF
+D1C3_3_Ga=196.349541		# nS
+D1C3_3_L_Gmax=0.392699		# nS
+D1C3_3_L_Erev=-65.000000
+
+D1C3_4_Cm=15.707963		# pF
+D1C3_4_Ga=196.349541		# nS
+D1C3_4_L_Gmax=0.392699		# nS
+D1C3_4_L_Erev=-65.000000
+
+D1C3_5_Cm=15.707963		# pF
+D1C3_5_Ga=196.349541		# nS
+D1C3_5_L_Gmax=0.392699		# nS
+D1C3_5_L_Erev=-65.000000
+
+#################################################
+
+#	D2C3_ lambda  = 2236.07	um
+#	6 comps of length 100.00 um (total 600.00 um)
+#	Comp taum = 40.00	msec
+#	Comp area = 1570.80	um2
+#	Comp ga   = 196.350	nS
+#	Comp gm   = 0.393	nS
+#	Comp cm   = 15.708	pF
+
+#################################################
+
+D2C3_0_Cm=15.707963		# pF
+D2C3_0_Ga=196.349541		# nS
+D2C3_0_L_Gmax=0.392699		# nS
+D2C3_0_L_Erev=-65.000000
+
+D2C3_1_Cm=15.707963		# pF
+D2C3_1_Ga=196.349541		# nS
+D2C3_1_L_Gmax=0.392699		# nS
+D2C3_1_L_Erev=-65.000000
+
+D2C3_2_Cm=15.707963		# pF
+D2C3_2_Ga=196.349541		# nS
+D2C3_2_L_Gmax=0.392699		# nS
+D2C3_2_L_Erev=-65.000000
+
+D2C3_3_Cm=15.707963		# pF
+D2C3_3_Ga=196.349541		# nS
+D2C3_3_L_Gmax=0.392699		# nS
+D2C3_3_L_Erev=-65.000000
+
+D2C3_4_Cm=15.707963		# pF
+D2C3_4_Ga=196.349541		# nS
+D2C3_4_L_Gmax=0.392699		# nS
+D2C3_4_L_Erev=-65.000000
+
+D2C3_5_Cm=15.707963		# pF
+D2C3_5_Ga=196.349541		# nS
+D2C3_5_L_Gmax=0.392699		# nS
+D2C3_5_L_Erev=-65.000000
+
+#################################################
+
+#	D1C4_ lambda  = 2236.07	um
+#	6 comps of length 100.00 um (total 600.00 um)
+#	Comp taum = 40.00	msec
+#	Comp area = 1570.80	um2
+#	Comp ga   = 196.350	nS
+#	Comp gm   = 0.393	nS
+#	Comp cm   = 15.708	pF
+
+#################################################
+
+D1C4_0_Cm=15.707963		# pF
+D1C4_0_Ga=196.349541		# nS
+D1C4_0_L_Gmax=0.392699		# nS
+D1C4_0_L_Erev=-65.000000
+
+D1C4_1_Cm=15.707963		# pF
+D1C4_1_Ga=196.349541		# nS
+D1C4_1_L_Gmax=0.392699		# nS
+D1C4_1_L_Erev=-65.000000
+
+D1C4_2_Cm=15.707963		# pF
+D1C4_2_Ga=196.349541		# nS
+D1C4_2_L_Gmax=0.392699		# nS
+D1C4_2_L_Erev=-65.000000
+
+D1C4_3_Cm=15.707963		# pF
+D1C4_3_Ga=196.349541		# nS
+D1C4_3_L_Gmax=0.392699		# nS
+D1C4_3_L_Erev=-65.000000
+
+D1C4_4_Cm=15.707963		# pF
+D1C4_4_Ga=196.349541		# nS
+D1C4_4_L_Gmax=0.392699		# nS
+D1C4_4_L_Erev=-65.000000
+
+D1C4_5_Cm=15.707963		# pF
+D1C4_5_Ga=196.349541		# nS
+D1C4_5_L_Gmax=0.392699		# nS
+D1C4_5_L_Erev=-65.000000
+
+#################################################
+
+#	D2C4_ lambda  = 2236.07	um
+#	6 comps of length 100.00 um (total 600.00 um)
+#	Comp taum = 40.00	msec
+#	Comp area = 1570.80	um2
+#	Comp ga   = 196.350	nS
+#	Comp gm   = 0.393	nS
+#	Comp cm   = 15.708	pF
+
+#################################################
+
+D2C4_0_Cm=15.707963		# pF
+D2C4_0_Ga=196.349541		# nS
+D2C4_0_L_Gmax=0.392699		# nS
+D2C4_0_L_Erev=-65.000000
+
+D2C4_1_Cm=15.707963		# pF
+D2C4_1_Ga=196.349541		# nS
+D2C4_1_L_Gmax=0.392699		# nS
+D2C4_1_L_Erev=-65.000000
+
+D2C4_2_Cm=15.707963		# pF
+D2C4_2_Ga=196.349541		# nS
+D2C4_2_L_Gmax=0.392699		# nS
+D2C4_2_L_Erev=-65.000000
+
+D2C4_3_Cm=15.707963		# pF
+D2C4_3_Ga=196.349541		# nS
+D2C4_3_L_Gmax=0.392699		# nS
+D2C4_3_L_Erev=-65.000000
+
+D2C4_4_Cm=15.707963		# pF
+D2C4_4_Ga=196.349541		# nS
+D2C4_4_L_Gmax=0.392699		# nS
+D2C4_4_L_Erev=-65.000000
+
+D2C4_5_Cm=15.707963		# pF
+D2C4_5_Ga=196.349541		# nS
+D2C4_5_L_Gmax=0.392699		# nS
+D2C4_5_L_Erev=-65.000000
+
+#################################################
+
+#	D1C5_ lambda  = 2236.07	um
+#	6 comps of length 100.00 um (total 600.00 um)
+#	Comp taum = 40.00	msec
+#	Comp area = 1570.80	um2
+#	Comp ga   = 196.350	nS
+#	Comp gm   = 0.393	nS
+#	Comp cm   = 15.708	pF
+
+#################################################
+
+D1C5_0_Cm=15.707963		# pF
+D1C5_0_Ga=196.349541		# nS
+D1C5_0_L_Gmax=0.392699		# nS
+D1C5_0_L_Erev=-65.000000
+
+D1C5_1_Cm=15.707963		# pF
+D1C5_1_Ga=196.349541		# nS
+D1C5_1_L_Gmax=0.392699		# nS
+D1C5_1_L_Erev=-65.000000
+
+D1C5_2_Cm=15.707963		# pF
+D1C5_2_Ga=196.349541		# nS
+D1C5_2_L_Gmax=0.392699		# nS
+D1C5_2_L_Erev=-65.000000
+
+D1C5_3_Cm=15.707963		# pF
+D1C5_3_Ga=196.349541		# nS
+D1C5_3_L_Gmax=0.392699		# nS
+D1C5_3_L_Erev=-65.000000
+
+D1C5_4_Cm=15.707963		# pF
+D1C5_4_Ga=196.349541		# nS
+D1C5_4_L_Gmax=0.392699		# nS
+D1C5_4_L_Erev=-65.000000
+
+D1C5_5_Cm=15.707963		# pF
+D1C5_5_Ga=196.349541		# nS
+D1C5_5_L_Gmax=0.392699		# nS
+D1C5_5_L_Erev=-65.000000
+
+#################################################
+
+#	D2C5_ lambda  = 2236.07	um
+#	6 comps of length 100.00 um (total 600.00 um)
+#	Comp taum = 40.00	msec
+#	Comp area = 1570.80	um2
+#	Comp ga   = 196.350	nS
+#	Comp gm   = 0.393	nS
+#	Comp cm   = 15.708	pF
+
+#################################################
+
+D2C5_0_Cm=15.707963		# pF
+D2C5_0_Ga=196.349541		# nS
+D2C5_0_L_Gmax=0.392699		# nS
+D2C5_0_L_Erev=-65.000000
+
+D2C5_1_Cm=15.707963		# pF
+D2C5_1_Ga=196.349541		# nS
+D2C5_1_L_Gmax=0.392699		# nS
+D2C5_1_L_Erev=-65.000000
+
+D2C5_2_Cm=15.707963		# pF
+D2C5_2_Ga=196.349541		# nS
+D2C5_2_L_Gmax=0.392699		# nS
+D2C5_2_L_Erev=-65.000000
+
+D2C5_3_Cm=15.707963		# pF
+D2C5_3_Ga=196.349541		# nS
+D2C5_3_L_Gmax=0.392699		# nS
+D2C5_3_L_Erev=-65.000000
+
+D2C5_4_Cm=15.707963		# pF
+D2C5_4_Ga=196.349541		# nS
+D2C5_4_L_Gmax=0.392699		# nS
+D2C5_4_L_Erev=-65.000000
+
+D2C5_5_Cm=15.707963		# pF
+D2C5_5_Ga=196.349541		# nS
+D2C5_5_L_Gmax=0.392699		# nS
+D2C5_5_L_Erev=-65.000000
+
+#################################################
+
+#	D1C6_ lambda  = 2236.07	um
+#	6 comps of length 100.00 um (total 600.00 um)
+#	Comp taum = 40.00	msec
+#	Comp area = 1570.80	um2
+#	Comp ga   = 196.350	nS
+#	Comp gm   = 0.393	nS
+#	Comp cm   = 15.708	pF
+
+#################################################
+
+D1C6_0_Cm=15.707963		# pF
+D1C6_0_Ga=196.349541		# nS
+D1C6_0_L_Gmax=0.392699		# nS
+D1C6_0_L_Erev=-65.000000
+
+D1C6_1_Cm=15.707963		# pF
+D1C6_1_Ga=196.349541		# nS
+D1C6_1_L_Gmax=0.392699		# nS
+D1C6_1_L_Erev=-65.000000
+
+D1C6_2_Cm=15.707963		# pF
+D1C6_2_Ga=196.349541		# nS
+D1C6_2_L_Gmax=0.392699		# nS
+D1C6_2_L_Erev=-65.000000
+
+D1C6_3_Cm=15.707963		# pF
+D1C6_3_Ga=196.349541		# nS
+D1C6_3_L_Gmax=0.392699		# nS
+D1C6_3_L_Erev=-65.000000
+
+D1C6_4_Cm=15.707963		# pF
+D1C6_4_Ga=196.349541		# nS
+D1C6_4_L_Gmax=0.392699		# nS
+D1C6_4_L_Erev=-65.000000
+
+D1C6_5_Cm=15.707963		# pF
+D1C6_5_Ga=196.349541		# nS
+D1C6_5_L_Gmax=0.392699		# nS
+D1C6_5_L_Erev=-65.000000
+
+#################################################
+
+#	D2C6_ lambda  = 2236.07	um
+#	6 comps of length 100.00 um (total 600.00 um)
+#	Comp taum = 40.00	msec
+#	Comp area = 1570.80	um2
+#	Comp ga   = 196.350	nS
+#	Comp gm   = 0.393	nS
+#	Comp cm   = 15.708	pF
+
+#################################################
+
+D2C6_0_Cm=15.707963		# pF
+D2C6_0_Ga=196.349541		# nS
+D2C6_0_L_Gmax=0.392699		# nS
+D2C6_0_L_Erev=-65.000000
+
+D2C6_1_Cm=15.707963		# pF
+D2C6_1_Ga=196.349541		# nS
+D2C6_1_L_Gmax=0.392699		# nS
+D2C6_1_L_Erev=-65.000000
+
+D2C6_2_Cm=15.707963		# pF
+D2C6_2_Ga=196.349541		# nS
+D2C6_2_L_Gmax=0.392699		# nS
+D2C6_2_L_Erev=-65.000000
+
+D2C6_3_Cm=15.707963		# pF
+D2C6_3_Ga=196.349541		# nS
+D2C6_3_L_Gmax=0.392699		# nS
+D2C6_3_L_Erev=-65.000000
+
+D2C6_4_Cm=15.707963		# pF
+D2C6_4_Ga=196.349541		# nS
+D2C6_4_L_Gmax=0.392699		# nS
+D2C6_4_L_Erev=-65.000000
+
+D2C6_5_Cm=15.707963		# pF
+D2C6_5_Ga=196.349541		# nS
+D2C6_5_L_Gmax=0.392699		# nS
+D2C6_5_L_Erev=-65.000000
+
+#################################################
+
+#	D1C7_ lambda  = 2236.07	um
+#	6 comps of length 100.00 um (total 600.00 um)
+#	Comp taum = 40.00	msec
+#	Comp area = 1570.80	um2
+#	Comp ga   = 196.350	nS
+#	Comp gm   = 0.393	nS
+#	Comp cm   = 15.708	pF
+
+#################################################
+
+D1C7_0_Cm=15.707963		# pF
+D1C7_0_Ga=196.349541		# nS
+D1C7_0_L_Gmax=0.392699		# nS
+D1C7_0_L_Erev=-65.000000
+
+D1C7_1_Cm=15.707963		# pF
+D1C7_1_Ga=196.349541		# nS
+D1C7_1_L_Gmax=0.392699		# nS
+D1C7_1_L_Erev=-65.000000
+
+D1C7_2_Cm=15.707963		# pF
+D1C7_2_Ga=196.349541		# nS
+D1C7_2_L_Gmax=0.392699		# nS
+D1C7_2_L_Erev=-65.000000
+
+D1C7_3_Cm=15.707963		# pF
+D1C7_3_Ga=196.349541		# nS
+D1C7_3_L_Gmax=0.392699		# nS
+D1C7_3_L_Erev=-65.000000
+
+D1C7_4_Cm=15.707963		# pF
+D1C7_4_Ga=196.349541		# nS
+D1C7_4_L_Gmax=0.392699		# nS
+D1C7_4_L_Erev=-65.000000
+
+D1C7_5_Cm=15.707963		# pF
+D1C7_5_Ga=196.349541		# nS
+D1C7_5_L_Gmax=0.392699		# nS
+D1C7_5_L_Erev=-65.000000
+
+#################################################
+
+#	D2C7_ lambda  = 2236.07	um
+#	6 comps of length 100.00 um (total 600.00 um)
+#	Comp taum = 40.00	msec
+#	Comp area = 1570.80	um2
+#	Comp ga   = 196.350	nS
+#	Comp gm   = 0.393	nS
+#	Comp cm   = 15.708	pF
+
+#################################################
+
+D2C7_0_Cm=15.707963		# pF
+D2C7_0_Ga=196.349541		# nS
+D2C7_0_L_Gmax=0.392699		# nS
+D2C7_0_L_Erev=-65.000000
+
+D2C7_1_Cm=15.707963		# pF
+D2C7_1_Ga=196.349541		# nS
+D2C7_1_L_Gmax=0.392699		# nS
+D2C7_1_L_Erev=-65.000000
+
+D2C7_2_Cm=15.707963		# pF
+D2C7_2_Ga=196.349541		# nS
+D2C7_2_L_Gmax=0.392699		# nS
+D2C7_2_L_Erev=-65.000000
+
+D2C7_3_Cm=15.707963		# pF
+D2C7_3_Ga=196.349541		# nS
+D2C7_3_L_Gmax=0.392699		# nS
+D2C7_3_L_Erev=-65.000000
+
+D2C7_4_Cm=15.707963		# pF
+D2C7_4_Ga=196.349541		# nS
+D2C7_4_L_Gmax=0.392699		# nS
+D2C7_4_L_Erev=-65.000000
+
+D2C7_5_Cm=15.707963		# pF
+D2C7_5_Ga=196.349541		# nS
+D2C7_5_L_Gmax=0.392699		# nS
+D2C7_5_L_Erev=-65.000000
+
+#################################################
+
+#	D1C8_ lambda  = 2236.07	um
+#	6 comps of length 100.00 um (total 600.00 um)
+#	Comp taum = 40.00	msec
+#	Comp area = 1570.80	um2
+#	Comp ga   = 196.350	nS
+#	Comp gm   = 0.393	nS
+#	Comp cm   = 15.708	pF
+
+#################################################
+
+D1C8_0_Cm=15.707963		# pF
+D1C8_0_Ga=196.349541		# nS
+D1C8_0_L_Gmax=0.392699		# nS
+D1C8_0_L_Erev=-65.000000
+
+D1C8_1_Cm=15.707963		# pF
+D1C8_1_Ga=196.349541		# nS
+D1C8_1_L_Gmax=0.392699		# nS
+D1C8_1_L_Erev=-65.000000
+
+D1C8_2_Cm=15.707963		# pF
+D1C8_2_Ga=196.349541		# nS
+D1C8_2_L_Gmax=0.392699		# nS
+D1C8_2_L_Erev=-65.000000
+
+D1C8_3_Cm=15.707963		# pF
+D1C8_3_Ga=196.349541		# nS
+D1C8_3_L_Gmax=0.392699		# nS
+D1C8_3_L_Erev=-65.000000
+
+D1C8_4_Cm=15.707963		# pF
+D1C8_4_Ga=196.349541		# nS
+D1C8_4_L_Gmax=0.392699		# nS
+D1C8_4_L_Erev=-65.000000
+
+D1C8_5_Cm=15.707963		# pF
+D1C8_5_Ga=196.349541		# nS
+D1C8_5_L_Gmax=0.392699		# nS
+D1C8_5_L_Erev=-65.000000
+
+#################################################
+
+#	D2C8_ lambda  = 2236.07	um
+#	6 comps of length 100.00 um (total 600.00 um)
+#	Comp taum = 40.00	msec
+#	Comp area = 1570.80	um2
+#	Comp ga   = 196.350	nS
+#	Comp gm   = 0.393	nS
+#	Comp cm   = 15.708	pF
+
+#################################################
+
+D2C8_0_Cm=15.707963		# pF
+D2C8_0_Ga=196.349541		# nS
+D2C8_0_L_Gmax=0.392699		# nS
+D2C8_0_L_Erev=-65.000000
+
+D2C8_1_Cm=15.707963		# pF
+D2C8_1_Ga=196.349541		# nS
+D2C8_1_L_Gmax=0.392699		# nS
+D2C8_1_L_Erev=-65.000000
+
+D2C8_2_Cm=15.707963		# pF
+D2C8_2_Ga=196.349541		# nS
+D2C8_2_L_Gmax=0.392699		# nS
+D2C8_2_L_Erev=-65.000000
+
+D2C8_3_Cm=15.707963		# pF
+D2C8_3_Ga=196.349541		# nS
+D2C8_3_L_Gmax=0.392699		# nS
+D2C8_3_L_Erev=-65.000000
+
+D2C8_4_Cm=15.707963		# pF
+D2C8_4_Ga=196.349541		# nS
+D2C8_4_L_Gmax=0.392699		# nS
+D2C8_4_L_Erev=-65.000000
+
+D2C8_5_Cm=15.707963		# pF
+D2C8_5_Ga=196.349541		# nS
+D2C8_5_L_Gmax=0.392699		# nS
+D2C8_5_L_Erev=-65.000000
+
+D1C1_1_D2C2_1_G_Ggap=25 	# nS
+D2C2_1_D1C1_1_G_Ggap=25 	# nS 
+D1C2_1_D2C3_1_G_Ggap=25 	# nS 
+D2C3_1_D1C2_1_G_Ggap=25 	# nS 
+D1C3_1_D2C4_1_G_Ggap=25 	# nS 
+D2C4_1_D1C3_1_G_Ggap=25 	# nS 
+D1C4_1_D2C5_1_G_Ggap=25 	# nS 
+D2C5_1_D1C4_1_G_Ggap=25 	# nS 
+D1C5_1_D2C6_1_G_Ggap=25 	# nS 
+D2C6_1_D1C5_1_G_Ggap=25 	# nS 
+D1C6_1_D2C7_1_G_Ggap=25 	# nS 
+D2C7_1_D1C6_1_G_Ggap=25 	# nS 
+D1C7_1_D2C8_1_G_Ggap=25 	# nS 
+D2C8_1_D1C7_1_G_Ggap=25 	# nS 
+D2C1_1_D1C8_1_G_Ggap=25 	# nS 
+D1C8_1_D2C1_1_G_Ggap=25 	# nS 
+
+ 
+# Definition of the inhibitory synapse
+A2_5_S1_A_Gmax=50 		# nS
+A2_5_S1_A_Erev=-70.0 		# mV
+A2_5_S1_A_AlphaTau=1.0 		# ms
+A2_5_S1_A_Threshold=-20.0 	# mV
+A2_5_S1_A_Slope=1.0 		# threshold goes up
+ 
+ 
+# For 2 ms a current of 3nA is applied to cell 2:
+V if (t>2&&t<4) A2_3_Iext=3000; else A2_3_Iext=0;
